@@ -1,0 +1,210 @@
+*{
+            margin:0;
+            padding:0;
+            box-sizing: border-box
+            /*stop here*/
+        }
+
+/*2*/
+        html{
+            /*height: 100vh;*/
+            /*width: 100vw;*/
+            background-color: #fff;
+            color: #555;
+            font-family:"Lato", Arial, sans-serif;
+            /*the second font is in the case most are online fonts*/
+            font-size: 20px;
+            font-weight:300;
+            text-rendering: optimizeLegibility;
+            /*this makes our font to render in a perfect way*/
+        }
+/*------------------------Header---------------------*/
+        header{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+            /*added because the bg was't looking nice yet*/
+            background-size:cover;
+            background-position: center;
+            /*succesfully positioned the image well*/
+            height:100vh;
+        }
+
+        .hero-text-box{
+            position: absolute;
+            width:50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+
+/*headlines*/
+        h1{
+            margin-bottom: 30px;
+            color: #fff;
+            font-size: 240%;
+            letter-spacing: 1px;
+            word-spacing: 4px;
+        }
+
+        h1,h2,h3{
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        h2{
+            font-size:180%;
+            letter-spacing:1px;
+            text-align: center;
+            word-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        h3{
+            font-size: 110%;
+            margin-bottom: 15px
+        }
+
+        .btn:link,
+        .btn:visited{
+            display: inline-block;
+            padding: 10px 30px;
+            font-weight: 300;
+            text-decoration: none;
+            border-radius: 200px;
+            color:#fff;
+            transition: background-color 0.2s,color 0.2s, border-color 0.2s;
+        }
+
+        .btn-full:link,
+        .btn-full:visited{
+            background-color: #e67e22;
+            border: 1px solid #e67e22;
+        }
+
+        .btn-ghost:link,
+        .btn-ghost:visited{
+            border: 1px solid #e67e22;
+            color:#e67e22;
+            margin-left: 20px
+        }
+
+        .btn:hover,
+        .btn:active{
+            background-color: #b96317;
+        }
+
+        .btn-ghost:hover,
+        .btn-ghost:active{
+            color: #fff
+        }
+        
+        .logo{
+            height: 100px;
+            width: auto;
+            margin-top: 20px;
+            float: left;
+        }
+
+        .main-nav{
+            list-style: none;
+            float: right;
+            margin-top: 55px
+        }
+
+        .main-nav>li{
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        .main-nav>li>a:link,
+        .main-nav>li>a:visited{
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+            border-bottom: 5px solid transparent;
+            transition: border-color .4s;
+            padding: 8px 0px
+        }
+
+        .main-nav>li>a:hover,
+        .main-nav>li>a:active{
+            border-bottom: 5px solid#e67e22
+        }
+
+/*features section open*/
+
+        .long-copy{
+            line-height: 145%;
+            width: 70%;
+            margin-left: 15%
+        }
+
+        section{
+            padding: 80px 0px
+        }
+
+        h2:after{
+            display:block;
+            content:"";
+            height: 2px;
+            background-color: #e67e22;
+            width: 100px;
+            margin: 30px auto 0px auto;
+        }
+        
+        .box{
+            padding: 1%;
+            text-align: justify
+        }
+
+        .box p{
+            font-size: 90%;
+            line-height: 145%
+        }
+
+        .icon-big{
+            font-size:350%;
+            display: block;
+            color: #e67e22;
+            margin-bottom: 10px
+        }
+/*features section close*/
+
+/*meals section open*/
+.section-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width:100%;
+}
+
+.meals-showcase>li{
+    width:25%;
+    display: block;
+    float:left
+}
+
+.meals-photo{
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    background:#000
+}
+
+.meals-photo>img{
+    width:100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.25);
+    transition: transform 1.5s, opacity 1.5s;
+}
+
+.meals-photo>img:hover{
+    opacity:1;
+    transform: scale(1.03)
+}
+
+/*meals section close*/
+        /*default orange = #e67e22*/
