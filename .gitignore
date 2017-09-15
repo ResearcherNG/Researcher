@@ -4,7 +4,7 @@
 # /composer.lock
 /fuel/vendor
 
-# the fuelphp document
+# the php document
 /docs/
 
 # you may install these packages with `oil package`.
